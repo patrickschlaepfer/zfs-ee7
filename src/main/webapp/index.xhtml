@@ -1,16 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
+		<div class="hero-unit">
+			<h2>JSF2 + Twitter Bootstrap demo</h2>
+			<p>This is a template for a simple marketing or informational
+				website. It includes a large callout called the hero unit and three
+				supporting pieces of content. Use it as a starting point to create
+				something more unique.</p>
+			<p>
+				<a href="http://rkovacevic.blogspot.com/"
+					class="btn btn-primary btn-large">Visit my blog!</a>
+			</p>
 
-    <body>
+			<br />
+			<h3>Your application can run on:</h3>
+			<img src="resources/gfx/dualbrand_as7eap.png" />
+			
+			Users #{userFacadeREST.countREST()} movies in #{theaterFacadeREST.countREST()} theaters!
 
-        <ui:composition template="./WEB-INF/template.xhtml">
+		</div>
 
-            <ui:define name="content">
-                Users #{userFacadeREST.countREST()} movies in #{theaterFacadeREST.countREST()} theaters!
-            </ui:define>
-
-        </ui:composition>
-
-    </body>
-</html>
+    </ui:define>
+</ui:composition>
