@@ -2,6 +2,8 @@ package com.schlaepfer.zfsgui.rest;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
@@ -12,6 +14,9 @@ import javax.ws.rs.Produces;
 
 import com.schlaepfer.zfsgui.entities.User;
 
+@Named
+@Stateless
+@Path("user")
 public class UserFacadeREST extends AbstractFacade<User> {
 	
 	@PersistenceContext

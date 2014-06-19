@@ -1,0 +1,3 @@
+INSERT INTO Z_USERS("ID", "NAME") VALUES (1, 'The Matrix')
+INSERT INTO Z_USERS("ID", "NAME") VALUES (2, 'The Lord of The Rings')
+INSERT INTO Z_USERS("ID", "NAME") VALUES (3, 'Inception')
